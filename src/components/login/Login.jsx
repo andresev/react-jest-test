@@ -1,7 +1,4 @@
-<<<<<<< HEAD
 import e from 'express';
-=======
->>>>>>> 7ed95d4b459cb2da8cf4012687e3729a2e873cfe
 import React, { useState } from 'react';
 import './Login.styles.css';
 
@@ -48,7 +45,6 @@ const styles = {
 
 const Login = () => {
   const [showError, setShowError] = useState(false);
-<<<<<<< HEAD
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [user, setUser] = useState({});
@@ -80,34 +76,6 @@ const Login = () => {
           <span data-testid="error" style={{ visibility: showError ? 'visible' : 'hidden' }}>
             {/* {showError ? 'Something went wrong!' : ''} */}
             Something went wrong!
-=======
-
-  return (
-    <div style={styles.container}>
-      <div style={styles.formArea}>
-        <form style={styles.form}>
-          <h1 style={styles.text}>Login</h1>
-          <input
-            style={styles.input}
-            type="text"
-            placeholder="username"
-            value=""
-          />
-          <br />
-          <input
-            style={styles.input}
-            type="password"
-            placeholder="password"
-            value=""
-          />
-          <br />
-          <button disabled style={styles.button} type="submit">
-            Login
-          </button>
-          <br />
-          <span data-testid="error" style={styles.span}>
-            {showError ? 'Something went wrong!' : ''}
->>>>>>> 7ed95d4b459cb2da8cf4012687e3729a2e873cfe
           </span>
         </form>
       </div>
