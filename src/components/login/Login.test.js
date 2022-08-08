@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 import { fireEvent, render, screen } from '@testing-library/react';
+=======
+import { render, screen } from '@testing-library/react';
+>>>>>>> 7ed95d4b459cb2da8cf4012687e3729a2e873cfe
 import Login from './Login';
 
 const Component = <Login />;
@@ -42,6 +46,7 @@ test('Button should be disabled', () => {
 test('error message should not be visible', () => {
   render(Component);
   const errorElement = screen.getByTestId('error');
+<<<<<<< HEAD
   expect(errorElement).not.toBeVisible();
 });
 
@@ -73,4 +78,7 @@ test('Button should be enabled if inputs are filled', () => {
   fireEvent.change(passwordInputElement, { target: { value: testValue } });
 
   expect(buttonInputElement).not.toBeDisabled();
+=======
+  expect(errorElement.textContent).toBe('');
+>>>>>>> 7ed95d4b459cb2da8cf4012687e3729a2e873cfe
 });
